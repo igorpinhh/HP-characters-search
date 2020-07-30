@@ -7,7 +7,6 @@
 }
 
 body {
-  font-family: sans-serif;
   background-color: #111d4a;
 }
 
@@ -16,6 +15,7 @@ body {
   margin: 0 auto;
   max-width: 1000px;
   text-align: center;
+  font-family: sans-serif;
 }
 
 .title-ico {
@@ -78,7 +78,7 @@ h1 {
   border-right: 0;
   padding: 5px 10px;
   font-size: 12px;
-  border-radius: 5px 0 0 5px;
+  border-radius: 3px 0 0 3px;
 }
 
 button {
@@ -91,12 +91,8 @@ button {
   align-items: center;
   border: 3px solid var(--main-color);
   border-left: none;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 3px 3px 0;
   background-color: var(--main-color);
-}
-
-#searchWrapper {
-  position: relative;
 }
 
 .search-img {

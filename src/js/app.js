@@ -29,9 +29,9 @@ const displayCharacters = (characters) => {
     .map((character) => {
       return `
         <li class="character">
-            <h2>${character.name}</h2>
-            <p>${character.house}</p>
-            <img src="${character.image}"/>
+          <h2>${character.name}</h2>
+          <p>${character.house}</p>
+          <img src="${character.image}">
         </li>
         `;
     })
