@@ -1,0 +1,108 @@
+:root {
+  --main-color: #2255b5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #111d4a;
+}
+
+.container {
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.title-ico {
+  width: 40px;
+}
+
+h1 {
+  color: #eee;
+  margin-bottom: 30px;
+}
+
+#charactersList {
+  padding-inline-start: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+}
+
+.character {
+  list-style-type: none;
+  background-color: #eaeaea;
+  border-radius: 3px;
+  padding: 10px 20px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+    "name image"
+    "house image";
+  text-align: left;
+}
+
+.character > h2 {
+  grid-area: name;
+  margin-bottom: 0px;
+}
+
+.character > p {
+  grid-area: house;
+  margin: 0;
+  margin-top: -18px;
+}
+
+.character > img {
+  max-height: 100px;
+  grid-area: image;
+}
+
+.search-bar {
+  width: 100%;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#searchBar {
+  width: calc(100% - 4em);
+  height: 36px;
+  border: 3px solid var(--main-color);
+  border-right: 0;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 5px 0 0 5px;
+}
+
+button {
+  width: 4em;
+  height: 36px;
+  border: none;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid var(--main-color);
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  background-color: var(--main-color);
+}
+
+#searchWrapper {
+  position: relative;
+}
+
+.search-img {
+  color: #eaeaea;
+  width: 3.5em;
+  padding: 0 10px;
+  height: 36px;
+  filter: invert(100%);
+}

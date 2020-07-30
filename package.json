@@ -1,0 +1,25 @@
+{
+  "name": "harry-potter-characters-search",
+  "version": "1.0.0",
+  "description": "App that consumes an api and return certain infos about some Harry Potter movie characters.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "igor pinheiro",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "1.18.2",
+    "express": "4.16.3",
+    "multer": "1.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "1.17.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github/igorpinhh/HP-characters-search"
+  }
+}
